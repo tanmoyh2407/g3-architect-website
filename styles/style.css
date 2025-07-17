@@ -1,0 +1,90 @@
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* shared styles */
+
+.btn_primary {
+    padding: 20px 25px;
+    border-radius: 5px;
+    background-color: #FF900E;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+/* navbar style */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    color: #131313;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: #424242;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav,
+.banner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* banner styel */
+
+.banner_container {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner_container h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    color: #131313;
+}
+
+.banner_container p {
+    color: #727272;
+}
+
+.banner_img {
+    width: 100%;
+}
+
+/* Responsive media query */
+
+@media screen and (max-width: 576px) {
+    nav, nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
