@@ -17,6 +17,22 @@
     font-weight: 600;
 }
 
+.dark1_20semibold {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #131313;
+}
+
+.dark1_45bold {
+    font-size: 2.8125rem;
+    font-weight: bold;
+    color: #131313;
+}
+
+.dark3_regular {
+    color: #727272;
+}
+
 .nav_banner_section {
     background-color: rgba(255, 144, 14, 0.1);
 }
@@ -99,10 +115,22 @@ nav,
     gap: 50px;
 }
 
+.team .team_img {
+    width: 50%;
+}
+
+.team .team_details_container {
+    width: 50%;
+}
+
 .team_img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 10px;
+}
+
+.team_img img {
+    width: 100%;
 }
 
 .team_title {
@@ -129,6 +157,81 @@ nav,
     margin-bottom: 50px;
 }
 
+/* features style START */
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.features_container h1 {
+    border-left: 10px solid #FF900E;
+    padding-left: 30px;
+}
+
+.features_card {
+    padding: 15px 20px 15px 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    margin-bottom: 10px;
+
+}
+
+.features_card h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.features_card p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.features .features_container {
+    width: 50%;
+}
+
+.features .architect_img {
+    width: 50%;
+}
+
+.architect_img img {
+    width: 100%;
+    height: auto;
+}
+
+/* experience_badge styel */
+
+#experience_badge {
+    background-color: #FF900E;
+    border-radius: 8px;
+    border: none;
+    padding: 35px 30px;
+    margin-top: -90px;
+    margin-left: -70px;
+}
+
+#experience_badge .ten_yrs {
+    font-size: 3.7rem;
+    font-weight: bold;
+    color: white;
+}
+
+#experience_badge .exp {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+}
+
+/* ******************************* */
+/* *************************** */
+/* *********************** */
+/* ******************* */
+/* *************** */
+/* *********** */
+/* ******* */
+/* *** */
 /* Responsive media query */
 
 @media screen and (max-width: 576px) {
@@ -147,5 +250,34 @@ nav,
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
+    }
+
+    .features {
+        flex-direction: column;
+        gap:10px;
+        width: 100%;
+    }
+
+    .features .features_container {
+        width: 100%;
+    }
+
+    .features .architect_img {
+        width: 100%;
+    }
+
+    .architect_img img {
+        width: 100%;
+        height: auto;
+    }
+
+    #experience_badge {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .architect_btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
